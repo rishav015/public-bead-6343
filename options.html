@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zara</title>
+    <style>
+        #nav{
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            width: 100%;
+            top:0px;
+        }
+        #size{
+            
+           font-size: 60px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #intro{
+            color: orange;
+        }
+        #box{
+          border:2px solid orange ;
+          width: 640px;
+          margin-top: 10px;
+        }
+        #payment{
+            display: flex;
+            gap:20px;
+            margin-top: 10px;
+        }
+        #payment>div{
+            border: 1px solid wheat;
+        }
+        .adjust{
+           text-align: center; 
+        }
+        #cards{
+            padding-top: 10px;
+        }
+        .items{
+            border: 1px solid rgb(183, 149, 149);
+            width: 200px;
+            margin-bottom:10px;
+        }
+        .items:hover{
+            border: 2px solid rgb(223, 197, 156);
+
+        }
+        #change{
+            background-color: black;
+            color:white;
+           border-radius: 10px;
+           padding: 10px;
+            
+        }
+        #change1{
+            display: flex;
+            justify-content: end;
+          bottom: 0px;
+          background-color: white;
+          position: sticky;
+           
+        }
+        #items1{
+            display: flex;
+            gap:10%;
+            width:50%;  
+          }
+          #items1 p{
+              font-size: 10px;
+          }
+    </style>
+</head>
+<body>
+  <div id="nav"></div>
+  <h3>CHOOSE A PAYMENT METHOD</h3>
+  <div id="box">
+    <p id="intro">Please note that only cards that use 3D Secure are accepted. Contact your bank to activate it or for further instructions.</p>
+  </div>
+   <div id="payment">
+
+  </div>
+  <div id="cards"></div>
+ <div id="items1"></div> 
+ <div id="change1">
+
+    <button id="change">continues</button>
+  </div>
+</body>
+</html>
+<script src="./scripts/options.js"></script>
+<script type="module">
+    import {footer,navbar} from "./scripts/footer.js"
+    let foot=document.querySelector("#items1")
+     foot.innerHTML=footer()
+     let bar=document.querySelector("#nav")
+     bar.innerHTML=navbar()
+</script>

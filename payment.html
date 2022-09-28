@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #items{
+            display: flex;
+            gap:10%;
+            width:50%;  
+          }
+          #items  p{
+              font-size: 10px;
+          }
+          #bank{
+            display: grid;
+            gap:30px;
+          }
+          #container{
+            border:1px solid black;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 30px;
+          }
+          #container img{
+            width:100px;
+          }
+          #navbar{
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            width: 100%;
+            top:0px;
+        }
+        #size{
+            
+            font-size: 60px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+         }
+
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <h1>ENTER YOUR CARD DETAILS</h1>
+    <div id="container"></div>
+    <div id="bank">
+        <div>
+            <input type="text" name="" id="" placeholder="CARD NUMBER">
+            <input type="month" placeholder="MONTH" >
+            <input type="year" placeholder="year">
+        </div>
+        <div>
+            <input type="text" placeholder="CARD HOLDER">
+            <input type="text" placeholder="CVV SECURITY CODE">
+        </div>
+    </div>
+    <div style="height:400px;"></div>
+    <div id="items"></div>
+</body>
+</html>
+<script src="./scripts/payment.js"></script>
+<script type="module">
+    import {footer,navbar} from "./scripts/footer.js"
+    let foot =document.querySelector("#items")
+    foot.innerHTML=footer()
+    let head=document.querySelector("#navbar")
+    head.innerHTML=navbar()
+</script>
