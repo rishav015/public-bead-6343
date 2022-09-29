@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container{
+    width: 75%;
+    padding-top: 30px;
+    margin: auto;
+}
+#container>h3{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#box{
+    margin-top: 100px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(6,auto);
+}
+#box>div{
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+#box>div>img{
+    width:50px;
+    height:50px;
+}
+#box>div>p{
+    font-size: 12px;
+}
