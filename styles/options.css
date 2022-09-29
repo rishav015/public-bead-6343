@@ -1,0 +1,81 @@
+body{
+    margin: 10px;
+    
+}
+#nav{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    top:0px;
+}
+#size{
+    
+   font-size: 60px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#intro{
+    color: orange;
+}
+#box{
+  border:2px solid orange ;
+  width: 640px;
+  margin-top: 50px;
+}
+#payment{
+    display: flex;
+    gap:20px;
+    margin-top: 100px;
+}
+#payment>div{
+    border: 1px solid wheat;
+}
+.adjust{
+   text-align: center; 
+  
+}
+#cards{
+    padding-top: 30px;
+    
+}
+.items{
+    border: 1px solid rgb(183, 149, 149);
+    width: 150px;
+    margin-bottom:10px;
+    text-align: center;
+
+}
+.items:hover{
+    border: 2px solid rgb(223, 197, 156);
+    transform: rotate(20deg);
+}
+#change{
+    background-color: black;
+    color:white;
+   padding: 10px;
+    
+}
+#change1{
+    display: flex;
+    justify-content: end;
+  bottom: 0px;
+  background-color: white;
+  position: sticky;
+   
+}
+#items1{
+    display: flex;
+    gap:10%;
+    width:50%;  
+    margin-top: 200px;
+  }
+  #items1 p{
+      font-size: 10px;
+  }
+  .impact:hover{
+    transform: scale(1.2);
+  }
+  .impact{
+    width: 150px;
+  }

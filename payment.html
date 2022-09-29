@@ -5,43 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #items{
-            display: flex;
-            gap:10%;
-            width:50%;  
-          }
-          #items  p{
-              font-size: 10px;
-          }
-          #bank{
-            display: grid;
-            gap:30px;
-          }
-          #container{
-            border:1px solid black;
-            height: 100px;
-            width: 100px;
-            margin-bottom: 30px;
-          }
-          #container img{
-            width:100px;
-          }
-          #navbar{
-            position: sticky;
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
-            width: 100%;
-            top:0px;
-        }
-        #size{
-            
-            font-size: 60px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-         }
-
-    </style>
+    <link rel="stylesheet" href="./styles/payment.css">
 </head>
 <body>
     <div id="navbar"></div>
@@ -50,8 +14,8 @@
     <div id="bank">
         <div>
             <input type="text" name="" id="" placeholder="CARD NUMBER">
-            <input type="month" placeholder="MONTH" >
-            <input type="year" placeholder="year">
+            <input type="number" placeholder="MONTH" >
+            <input type="number" placeholder="year">
         </div>
         <div>
             <input type="text" placeholder="CARD HOLDER">
@@ -60,6 +24,7 @@
     </div>
     <div style="height:400px;"></div>
     <div id="items"></div>
+    
 </body>
 </html>
 <script src="./scripts/payment.js"></script>
