@@ -9,6 +9,7 @@
      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
      crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="navStyle.css"/>
     <style>
       /* creating main landing page */
       html{
@@ -23,11 +24,18 @@
             margin:0px;
             padding:0px;
         }
+        #navbar{
+            margin:auto auto -100px auto;
+            height:100px;
+            z-index:200;
+        }
         #container{
          position:relative;
          height:100vh;
          width:100%;
          overflow:hidden;
+         z-index:-3;
+         margin-top:-57vh;
         }
        .son{
        overflow:hidden;
@@ -51,6 +59,7 @@ video{
 img,vedio{
     object-fit: cover
 }
+
 .son:nth-child(1){
     animation-delay: 2s;
     object-fit:content;
@@ -58,7 +67,7 @@ img,vedio{
     margin-left:10%
 }
 .son:nth-child(2){
-    animation-delay: 8s
+    animation-delay: 7s
 }
 .son:nth-child(3){
     animation-delay: 12s
@@ -92,70 +101,88 @@ img,vedio{
    width:90%;
    z-index:7;
    margin:80vh auto 10vh 10%;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 #bottomBar>p{
   justify-content: space-around;
   z-index:7;
 }
-#bottomBar>p:nth-child(8){
-margin:12px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size:25px;
-z-index:8;
-}
 a{
-  color:black
+  color:black;
+  text-decoration:none
+}
+#position{
+    position:absolute;
+}
+#men{
+    margin-top:50vh;
+    height:30px;
+    width:50px;
+    margin-bottom:2vh;
+    z-index:201;
+    font-size:large;
+    margin-left:95%;
+    font-size:19px;
+    cursor:pointer
 }
   </style>
 </head>
 <body>
-    <div id="container">  
-  <div class="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-38-3//w/1366/IMAGE-landscape-default-fill-3826ba34-9fad-4264-9ecd-6d2bc9295d9c-default_0.jpg?ts=1663773455159"/>
-  </div>
-<div class="son">
-    <video controls autoplay loop muted>
-        <source src="https://static.zara.net/video///mkt/2022/9/aw22-joinlife-jeans-redesign/subhome-xmedia-paisesnoelietop/w/1366//video-landscape/subhome-xmedia-paisesnoelietop_0.mp4?ts=1664131718445" type="video/mp4">
-        
-    </video>
-</div>
-<div id="im1" class="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-38-3//w/1426/IMAGE-portrait-ipad-default-fill-a08ff349-7d66-4fe8-9298-b52b8d7d4d92-default_0.jpg?ts=1663773044249">
-</div>
-<div id="im2" class="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-y2k-collection/subhome-xmedia-38//w/1426/IMAGE-portrait-ipad-fill-5640e071-5072-4433-9115-7fbf116d0f90-default_0.jpg?ts=1663790135620"/>
-</div>
-<div id="im3" class="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-best-sellers/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-c68605f6-1f94-4830-8f4a-0f3bf22017e2-default_0.jpg?ts=1663579002306"/>
-</div>
-<div id="im4" class="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-collection/subhome-xmedia-39//w/1366/IMAGE-landscape-fill-8a1ce69a-a1f6-4b5c-b04a-c3ea44664c19-default_0.jpg?ts=1663794685596"/>
-</div>
-<div id="im5" class="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-basics/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-f5302ebb-2ddc-4218-81c2-eb0464c2d73f-default_0.jpg?ts=1663576361647"/>
-</div>
-<div id="im6" class="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-shoes-bags/subhome-xmedia-38//w/1366/IMAGE-landscape-default-fill-5c2d5cc1-7805-42c8-9238-635ec71551d3-default_0.jpg?ts=1663770211821"/>
-</div>
-
-<div id="bottomBar">
-  <p><a href="women.html#im1"></a>new</a></p>
- <p><a href="women.html#im2">the zeans redesign x zara</a></p> 
- <p><a href="women.html#im3">y2k | metaverse</a></p>
- <p><a href="women.html#im4">best sellers</a></p>
- <p><a href="women.html#im5">collection</a></p>
- <p><a href="women.html#im6">basics</a></p>
- <p><a href="women.html">shoes</a></p>
- 
- <p><a href="men.html">Man &gt; </a></p>
-
-</div>
-
-</div>
-
+    <div id="position">
+        <div id="navbar"></div>
+        <p id="men">Man &gt;</p>
+        <div id="container">    
+      <div class="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-38-3//w/1366/IMAGE-landscape-default-fill-3826ba34-9fad-4264-9ecd-6d2bc9295d9c-default_0.jpg?ts=1663773455159"/>
+      </div>
+    <div class="son">
+        <video controls autoplay loop muted>
+            <source src="https://static.zara.net/video///mkt/2022/9/aw22-joinlife-jeans-redesign/subhome-xmedia-paisesnoelietop/w/1366//video-landscape/subhome-xmedia-paisesnoelietop_0.mp4?ts=1664131718445" type="video/mp4">
+            
+        </video>
+    </div>
+    <div id="im1" class="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-38-3//w/1426/IMAGE-portrait-ipad-default-fill-a08ff349-7d66-4fe8-9298-b52b8d7d4d92-default_0.jpg?ts=1663773044249">
+    </div>
+    <div id="im2" class="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-y2k-collection/subhome-xmedia-38//w/1426/IMAGE-portrait-ipad-fill-5640e071-5072-4433-9115-7fbf116d0f90-default_0.jpg?ts=1663790135620"/>
+    </div>
+    <div id="im3" class="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-best-sellers/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-c68605f6-1f94-4830-8f4a-0f3bf22017e2-default_0.jpg?ts=1663579002306"/>
+    </div>
+    <div id="im4" class="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-collection/subhome-xmedia-39//w/1366/IMAGE-landscape-fill-8a1ce69a-a1f6-4b5c-b04a-c3ea44664c19-default_0.jpg?ts=1663794685596"/>
+    </div>
+    <div id="im5" class="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-basics/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-f5302ebb-2ddc-4218-81c2-eb0464c2d73f-default_0.jpg?ts=1663576361647"/>
+    </div>
+    <div id="im6" class="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-shoes-bags/subhome-xmedia-38//w/1366/IMAGE-landscape-default-fill-5c2d5cc1-7805-42c8-9238-635ec71551d3-default_0.jpg?ts=1663770211821"/>
+    </div>
+    
+    <div id="bottomBar">
+      <p><a href="women.html#im1"></a>new</a></p>
+     <p><a href="women.html#im2">the zeans x zara</a></p> 
+     <p><a href="women.html#im3">y2k | metaverse</a></p>
+     <p><a href="women.html#im4">best sellers</a></p>
+     <p><a href="women.html#im5">collection</a></p>
+     <p><a href="women.html#im6">basics</a></p>
+     <p><a href="women.html">shoes</a></p>
+     
+     
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
 </body>
-<script>
+<script type="module">
+    import navbar from "./navbar.js";
+    document.querySelector('#navbar').innerHTML=navbar()
+
+
  $(document).ready(function(){
         $("#bottomBar>p>a").on("click",function(){
             $("html,body").animate({
@@ -175,5 +202,9 @@ a{
         }
     });
     
+    document.querySelector("#men").addEventListener("click",function(){
+        console.log('I m ready')
+        window.location.href="men.html"
+    })
 </script>
 </html>

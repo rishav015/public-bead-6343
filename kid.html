@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="navStyle.css"/>
     <style>
       /* creating main landing page */
       html{
@@ -19,11 +20,18 @@
             margin:0px;
             padding:0px;
         }
+        #navbar{
+            margin:auto auto -100px auto;
+            height:100px;
+            z-index:200;
+        }
         #container{
          position:relative;
          height:100vh;
          width:100%;
          overflow:hidden;
+         z-index:-1;
+         margin-top:-57vh
         }
        #son{
        overflow:hidden;
@@ -85,80 +93,96 @@ img,vedio{
    width:90%;
    z-index:7;
    margin:80vh auto 10vh 10%;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 #bottomBar>p{
   justify-content: space-around;
   z-index:7;
 }
-#bottomBar>p:nth-child(1){
-margin:12px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size:25px;
-z-index:8;
-}
+
+#navbar{
+            margin:auto auto -100px auto;
+            height:100px;
+            z-index:200;
+        }
 a{
-  color:black
+  color:black;
+  text-decoration:none
+}
+#position{
+    position:absolute;
+}
+#men{
+    margin-top:50vh;
+    height:30px;
+    width:50px;
+    margin-bottom:2vh;
+    z-index:201;
+    font-size:large;
+    margin-right:90%;
+    font-size:19px;
+    cursor:pointer
 }
   </style>
 </head>
 <body>
-    <div id="container">  
-        <div id="son">
-            <video controls autoplay loop muted>
-                <source src="https://www.shutterstock.com/shutterstock/videos/1060156547/preview/stock-footage-different-colors-of-funny-cartoon-fishes.webm" type="video/mp4">
-                
-            </video>
-        </div> 
-  <div id="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-girl/subhome-xmedia-38-2//w/1366/IMAGE-landscape-fill-b151fa00-510c-4041-bdfb-f017313f8e0d-default_0.jpg?ts=1663871558562"/>
-  </div>
-<div id="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-boy/subhome-xmedia-38-2//w/1366/IMAGE-landscape-fill-aa8667a5-4747-421a-8c66-2dba3d7b3afc-default_0.jpg?ts=1663870203073">
-</div>
-<div id="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-babygirl/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-79e6baba-0718-4cda-bbb5-ff3f6fe0be62-default_0.jpg?ts=1663870712229"/>
-</div>
-<div id="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-babyboy/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-f9ab1b72-c48b-47fe-84c3-006e8f6141cb-default_0.jpg?ts=1663871170295"/>
-</div>
-<div id="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-mini/subhome-xmedia-37//w/1366/IMAGE-landscape-fill-bd3917b7-471f-4f23-97a8-a6b6aa0d9c84-default_0.jpg?ts=1663325838920"/>
-</div>
-<div id="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-join-life/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-4e354fe1-c38f-4d4b-8e9c-d58f5718aefa-default_0.jpg?ts=1663763505030"/>
-</div>
-<!-- <div id="son">
-    <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-shoes-bags/subhome-xmedia-38//w/1366/IMAGE-landscape-default-fill-5c2d5cc1-7805-42c8-9238-635ec71551d3-default_0.jpg?ts=1663770211821"/>
-</div> -->
-
-<div id="bottomBar">
-    <p><a href="men.html"> &lt; men</a></p>
-  <p>new</a></p>
- <p>the zeans redesign x zara</p> 
- <p>y2k | metaverse</p>
- <p>best sellers</p>
- <p>collection</p>
- <p>basics</p>
- <p>shoes</p>
-
-</div>
-
-</div>
+    <div id="position">
+        <div id="navbar"></div>
+    
+            
+        <p id="men"><a href="men.html"> &lt; men</a></p>
+        
+        <div id="container">  
+            <div id="son" onclick="detail()">
+                <video controls autoplay loop muted>
+                    <source src="https://www.shutterstock.com/shutterstock/videos/1060156547/preview/stock-footage-different-colors-of-funny-cartoon-fishes.webm" type="video/mp4">
+                    
+                </video>
+            </div> 
+      <div id="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-girl/subhome-xmedia-38-2//w/1366/IMAGE-landscape-fill-b151fa00-510c-4041-bdfb-f017313f8e0d-default_0.jpg?ts=1663871558562"/>
+      </div>
+    <div id="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-boy/subhome-xmedia-38-2//w/1366/IMAGE-landscape-fill-aa8667a5-4747-421a-8c66-2dba3d7b3afc-default_0.jpg?ts=1663870203073">
+    </div>
+    <div id="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-babygirl/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-79e6baba-0718-4cda-bbb5-ff3f6fe0be62-default_0.jpg?ts=1663870712229"/>
+    </div>
+    <div id="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-babyboy/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-f9ab1b72-c48b-47fe-84c3-006e8f6141cb-default_0.jpg?ts=1663871170295"/>
+    </div>
+    <div id="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-mini/subhome-xmedia-37//w/1366/IMAGE-landscape-fill-bd3917b7-471f-4f23-97a8-a6b6aa0d9c84-default_0.jpg?ts=1663325838920"/>
+    </div>
+    <div id="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-join-life/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-4e354fe1-c38f-4d4b-8e9c-d58f5718aefa-default_0.jpg?ts=1663763505030"/>
+    </div>
+    <!-- <div id="son">
+        <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-shoes-bags/subhome-xmedia-38//w/1366/IMAGE-landscape-default-fill-5c2d5cc1-7805-42c8-9238-635ec71551d3-default_0.jpg?ts=1663770211821"/>
+    </div> -->
+    
+    <div id="bottomBar">
+      <p><a href="item.html">new</a></p>
+     <p><a href="item.html">the zeans x zara</a></p> 
+     <p><a href="item.html">y2k | metaverse</a></p>
+     <p><a href="item.html">best sellers</a></p>
+     <p><a href="item.html">collection</a></p>
+     <p><a href="item.html">basics</a></p>
+     <p><a href="item.html">shoes</a></p>
+    
+    </div>
+    
+    </div>
+    </div>
+    
 
 </body>
-<script>
- let bar= document.querySelector('#bottomBar');
- bar.addEventListener('click',mi);
- function mi(){
-  console.log('mitali you are beautiful');
+<script type="module">
+     import navbar from "./navbar.js";
+    document.querySelector('#navbar').innerHTML=navbar()
+
+    
+    
  
- }
- 
-  if(bar.style.backgroundColor=='black'){
-    bar.style.color='white'
-  }else{
-    bar.style.color='black'
-  }
 </script>
 </html>

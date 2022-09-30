@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="navStyle.css"/>
     <style>
       /* creating main landing page */
       html{
@@ -24,13 +25,20 @@
          height:100vh;
          width:100%;
          overflow:hidden;
+         z-index:-1;
+         margin-top:-59.5vh;
+        }
+         #navbar{
+            margin:auto auto -100px auto;
+            height:100px;
+            z-index:200;
         }
        #son{
        overflow:hidden;
        position:absolute;
        margin-top:100vh;
        margin-left:0px;
-       animation:20s slider infinite ease-in-out;
+       animation:18s slider infinite ease-in-out;
        height:100vh;
        width:100%;
        opacity:10;
@@ -48,17 +56,17 @@ img,vedio{
     object-fit: contain
 }
 #son:nth-child(1){
-    animation-delay: 2s;
+    animation-delay: 1.9s;
 }
 #son:nth-child(2){
     animation-delay: 8s
 }
 #son:nth-child(3){
-    animation-delay: 12s
+    animation-delay: 14.1s
 }
- #son:nth-child(4){
-    animation-delay: 16s
-}
+ /* #son:nth-child(4){
+    animation-delay: 21s
+} */
 /*#son:nth-child(5){
     animation-delay: 20s
 } */
@@ -76,31 +84,44 @@ img,vedio{
    width:90%;
    z-index:7;
    margin:80vh auto 10vh 10%;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 #bottomBar>p{
   justify-content: space-around;
   z-index:7;
 }
-#bottomBar>p:nth-child(9){
-margin:12px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size:25px;
-z-index:8;
-}
-#bottomBar>p:nth-child(1){
-    margin:12px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size:25px;
-z-index:8;
-}
 a{
-  color:black
+  color:black;
+  text-decoration:none
 }
-
+#position{
+    position:absolute;
+}
+#links{
+  margin-top:50vh;
+    height:50px;
+    width:98%;
+    margin-bottom:2vh;
+    z-index:201;
+    font-size:large;
+    margin-left:.5%;
+    font-size:19px;
+    cursor:pointer;
+    display:flex;
+}
+#links>div:last-child{
+  text-align: end;
+}
   </style>
 </head>
 <body>
+  <div id="position">
+    <div id="navbar"></div>
+    <div id="links">
+      <div><p><a href="women.html"> &lt; women</a></p></div>
+      <div><p><a href="kid.html">Kid &gt; </a></p></div>
+    </div>
+    
     <div id="container">  
         <div id="son">
             <video controls autoplay loop muted>
@@ -114,41 +135,33 @@ a{
 <div id="son">
     <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-man-new/subhome-xmedia-39//w/1366/IMAGE-landscape-fill-fbb20929-1e45-4d24-8139-c6351a17419b-default_0.jpg?ts=1664208804884">
 </div>
-<div id="son">
+<!-- <div id="son">
     <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-man-thezexperience/subhome-xmedia-37//w/1366/IMAGE-portrait-ipad-fill-c4281a92-9df9-43ef-8036-393163fe0d6f-default_0.jpg?ts=1663171820555"/>
-</div>
+</div> -->
 <!-- <div id="son">
     <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-best-sellers/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-c68605f6-1f94-4830-8f4a-0f3bf22017e2-default_0.jpg?ts=1663579002306"/>
 </div>-->
 
 
 <div id="bottomBar">
-<p><a href="women.html"> &lt; women</a></p>    
+    
   <p>new</a></p>
- <p>the zeans redesign x zara</p> 
+ <p>the zeans x zara</p> 
  <p>y2k | metaverse</p>
  <p>best sellers</p>
  <p>collection</p>
  <p>basics</p>
  <p>shoes</p>
- <p><a href="kid.html">Kid &gt; </a></p>
+ 
 </div>
 </div>
 
-</body>
-<script>
- let bar= document.querySelector('#bottomBar');
- bar.addEventListener('click',mi);
- function mi(){
-  console.log('mitali you are beautiful');
- 
- }
- 
-  if(bar.style.backgroundColor=='black'){
-    bar.style.color='white'
-  }else{
-    bar.style.color='black'
-  }
+  </div>
   
+</body>
+<script type="module">
+  import navbar from "./navbar.js";
+    document.querySelector('#navbar').innerHTML=navbar()
+
 </script>
 </html>
