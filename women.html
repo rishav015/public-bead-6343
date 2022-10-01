@@ -9,7 +9,7 @@
      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
      crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="navStyle.css"/>
+    <link rel="stylesheet" href="nav.css"/>
     <style>
       /* creating main landing page */
       html{
@@ -161,13 +161,13 @@ a{
     </div>
     
     <div id="bottomBar">
-      <p><a href="women.html#im1"></a>new</a></p>
-     <p><a href="women.html#im2">the zeans x zara</a></p> 
-     <p><a href="women.html#im3">y2k | metaverse</a></p>
-     <p><a href="women.html#im4">best sellers</a></p>
-     <p><a href="women.html#im5">collection</a></p>
-     <p><a href="women.html#im6">basics</a></p>
-     <p><a href="women.html">shoes</a></p>
+      <p><a href="#im1">new</a></p>
+     <p><a href="#im2">the zeans x zara</a></p> 
+     <p><a href="#im3">y2k | metaverse</a></p>
+     <p><a href="#im4">best sellers</a></p>
+     <p><a href="#im5">collection</a></p>
+     <p><a href="#im6">basics</a></p>
+     <p><a href="#im1">shoes</a></p>
      
      
     
@@ -179,12 +179,14 @@ a{
     
 </body>
 <script type="module">
-    import navbar from "./navbar.js";
+    import navbar from "./nav.js";
     document.querySelector('#navbar').innerHTML=navbar()
 
 
  $(document).ready(function(){
+
         $("#bottomBar>p>a").on("click",function(){
+        
             $("html,body").animate({
                 scrollTop:$($.attr(this,"href")).get(0).scrollHeight
             },1500)
@@ -206,5 +208,6 @@ a{
         console.log('I m ready')
         window.location.href="men.html"
     })
+    
 </script>
 </html>
