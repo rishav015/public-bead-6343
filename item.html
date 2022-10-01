@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* #popupContainer{
+        position:absolute
+    } */
+        #container{
+            display:grid;
+            width:60%;
+            margin:80px auto auto auto;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+        }
+        /* #container>div>img{
+          height:80%;
+        } */
+        #main{
+            height:500px;
+            width:600px;
+            margin:auto;
+        }
+        img{
+            height:100%;
+            width:100%;
+        }
+        h1{
+            font-size: 80px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p{
+            font-size: small;
+            text-align: center;
+            margin-top: -70px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:gray
+        }
+        .popup{
+            background:rgba(0,0,0,0.6);
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .content{
+            height:250px;
+            width:400px;
+            background:#fff;
+            padding:20px;
+            border-radius:5px;
+            position:relative;
+        }
+        #icon{
+            height:25px;
+            width:25px;
+            position: absolute;
+            top:-15px;
+            right:-15px;
+            border-radius: 50%;
+            box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+            cursor: pointer;
+        }
+        select,button{
+            margin:20px auto;
+           display:block;
+           width:60%;
+           padding:8px;
+           border-top-left-radius: 15px;
+           border-bottom-right-radius:15px;
+          height:18%;
+          font-size: large;
+        }
+        #logo{
+          height:50px;
+          width:150px
+        }
+    </style>
+</head>
+<body>
+    <div id="popupContainer">
+        <div id="main">
+            <img src="https://static.zara.net/photos///2022/I/0/3/p/2224/770/803/303/w/877/2224770803_15_3_1.jpg?ts=1664203513330">
+        </div>
+        <h1><strong>LOVE NYC</strong></h1>
+        <p>skate citizen in nyc in 2022</p>
+        <div id="container">
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/3/p/3182/730/800/2/w/205/3182730800_6_1_1.jpg?ts=1661848074549"/>
+             <p>CHECK OVERSHIRT WITH DETACHABLE HOOD<br>
+                ₹ 2,290.00</p>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/3/p/1323/749/600/2/w/205/1323749600_6_1_1.jpg?ts=1659509348696"/>
+              <p>KIDS/ RIBBED BEANIE WITH LABEL
+                +2<br>
+                ₹ 690.00</p>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/3/p/2224/770/132/2/w/205/2224770132_6_1_1.jpg?ts=1664286279726"/>
+            <p>DAY DONE HOODIE
+                +8<br>
+                ₹ 1,590.00</p>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/3/p/9959/761/800/2/w/205/9959761800_6_1_1.jpg?ts=1659625758332"/>
+            <p>TWILL TROUSERS WITH ELASTIC
+                +1<br>
+                ₹ 1,590.00</p>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/3/p/6208/711/712/2/w/205/6208711712_6_1_1.jpg?ts=1660144712532"/>
+            <p>SKATE T-SHIRT<br>
+                ₹ 790.00</p>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/1/3/p/4430/030/040/2/w/205/4430030040_6_2_1.jpg?ts=1661869170114"/>
+            <p>KIDS/ LACE-UP SKATE SNEAKERS
+                +1<br>
+                ₹ 1,990.00</p>
+            </div>
+        </div>
+        <div id="main" style="margin:100px auto auto auto">
+            <img src="https://static.zara.net/photos///2022/I/0/3/p/9959/761/800/302/w/877/9959761800_15_1_1.jpg?ts=1664208525826">
+        </div>
+        <div id="main" style="margin:50px auto auto auto">
+            <img src="https://static.zara.net/photos///2022/I/0/3/p/3181/750/800/303/w/581/3181750800_15_1_1.jpg?ts=1664201332824">
+        </div>
+        <div id="container">
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/3/p/3121/751/505/2/w/205/3121751505_6_1_1.jpg?ts=1660295461947"/>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/3/p/3991/750/600/2/w/205/3991750600_6_1_1.jpg?ts=1663936845463"/>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/3/p/4701/798/800/2/w/205/4701798800_6_1_1.jpg?ts=1662720495698"/>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/3/p/1213/755/400/2/w/205/1213755400_6_1_1.jpg?ts=1658905457107"/>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/1/3/p/1447/030/032/2/w/205/1447030032_6_2_1.jpg?ts=1663855493270"/>
+            </div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/3/p/1213/760/800/2/w/205/1213760800_6_1_1.jpg?ts=1658141183963"/>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="content">
+            <div id="logo">
+                <img src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png" alt="zaralogo">
+            </div>
+            <div id="icon">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxq9MEn_yurANhSMZAc3ntPIVZ6YL9FV-IUg&usqp=CAU">
+            </div>
+            <select>
+                <option>choose age in years</option>
+                <option>0-2</option>
+                <option>3-5</option>
+                <option>6-9</option>
+                <option>10-14</option>
+            </select>
+            <select>
+                <option>choose size</option>
+                <option>small</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <Button id="btn">buy now</Button>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector("#container").addEventListener('click', function(){
+        window.location.href="item.html";
+        document.querySelector(".popup").style.display="flex";
+        document.querySelector('#popupContainer').style.position="fixed"
+    });
+
+    document.querySelector('#icon').addEventListener('click',()=>{
+        document.querySelector('.popup').style.display='none';
+        document.querySelector('#popupContainer').style.position="absolute"
+    })
+</script>
+</html>
