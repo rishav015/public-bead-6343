@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LOG IN</title>
+    <title>LOG IN </title>
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
       rel="stylesheet"
@@ -14,8 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="./login.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+     <!-- <link rel="stylesheet" href="./styles/footer.css" />  -->
 
     <script src="./loginValidation.js">
       
@@ -23,8 +23,8 @@
   </head>
 
   <body>
-    <div id="head"></div>
-    <div id="ldiv">
+    <div id="navbar"></div>
+    <div id="logindiv">
       <div id="log">
         <section>
           <h3>LOG IN</h3>
@@ -40,17 +40,17 @@
               <br />
               <input
                 type="password"
-                id="inPasswd"
+                id="inputPasswd"
                 placeholder="password"
                 required
               />
             </div>
-            <p class="sizeR">HAVE YOU FORGOTTEN YOUR PASSWORD?</p>
+            <p class="size6">HAVE YOU FORGOTTEN YOUR PASSWORD?</p>
 
             <!-- <button type="submit">LOG IN</button> -->
             <!-- <a href="">HAVE YOU FORGOTTEN YOUR
                         PASSWORD?</a> -->
-            <div id="logb">
+            <div id="logbttn">
               <button  type="submit">LOG IN</button>
             </div>
           </form>
@@ -77,8 +77,8 @@
             </p>
           </div>
 
-          <div id="btn">
-            <button><a href="./create account.html"> CREATE ACCOUNT</a></button>
+          <div id="bttn">
+            <button><a href="./create-company.html"> CREATE ACCOUNT</a></button>
           </div>
         </section>
       </div>
@@ -89,3 +89,10 @@
 </html>
 <script src="./login.js"></script>
 
+<script type="module">
+  import { navbar } from "./navbar.js";
+  // import { footer } from "./components/footer.js";
+  let navbardata = document.getElementById("navbar").innerHTML = navbar();
+  // footer = document.getElementById("footer");
+  // footer.innerHTML = footers();
+</script>

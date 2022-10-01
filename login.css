@@ -3,18 +3,16 @@
     font-family: 'Poppins',sans-serif;
 }
 
-#ldiv {
+#logindiv {
     width: 70%;
     height: 100%;
-
-  
     margin-top: 200px;
     display: flex;
     gap: 3%;
 
 }
 
-#ldiv div {
+#logindiv div {
     width: 50%;
     height: 100%;
 
@@ -23,7 +21,7 @@
     margin-left: 220px;
 }
 
-#ldiv input {
+#logindiv input {
     outline: none;
     border-top: 0;
     border-left: 0;
@@ -36,7 +34,7 @@
     font-size: 10px;
 
 }
-.sizeR{
+.size6{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8px;
     font-weight: bold;
@@ -49,11 +47,11 @@
     font-size: 8px;
 
 }
-#btn{
+#bttn{
     margin-top: 70px;
 }
 
-#btn button {
+#bttn button {
     width: 19em;
     height: 2.7em;
     background-color: black;
@@ -63,25 +61,25 @@
     outline: none;
     border: none;
 }
-#btn button:hover ,#logb button:hover{
+#bttn button:hover ,#logbttn button:hover{
     background-color: rgb(46, 46, 46);
 
 }
 
-#btn button a{
+#bttn button a{
     color: white;
     font-size: x-small;
     text-decoration: none;
     font-size: 10px;
 }
-#logb button a{
+#logbttn button a{
     color: white;
     font-size: x-small;
     text-decoration: none;
     font-size: 10px;
 }
 
-#logb button {
+#logbttn button {
   width: 19em;
   height: 2.7em;
     background-color: black;
@@ -102,7 +100,7 @@
     width: 130%;
     height: 20px;
 }
-#inPasswd {
+#inputPasswd {
     border: 0.01px solid gray;
   
     width: 130%;
@@ -111,7 +109,7 @@
 
 @media only screen and (min-width:375px) and (max-width:768px){
    
-    #ldiv {
+    #logindiv {
         width: 100%;
         height: 100%;
     margin-top: 200px;
@@ -128,14 +126,14 @@
     }
   
 
-    #btn button {
+    #bttn button {
         width: 10em;
         height: 3em;
         background-color: black;
         color: white;
         margin-top: 5px;
     }
-    #logb button {
+    #logbttn button {
         width: 10em;
         height: 3em;
           background-color: black;
@@ -144,14 +142,14 @@
           margin-top: 45px;
        
       }
-      #btn{
+      #bttn{
         margin-top: 60px;
     }
     .size {
         font-size: 30px;
     
     }
-    .sizeR{
+    .size6{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
         font-weight: bold;
@@ -168,7 +166,7 @@
 
 }
 @media only screen and (min-width:0px) and (max-width:844px){
- #ldiv>#reg{
+ #logindiv>#reg{
     display: none;
 }
 .size p{
@@ -184,7 +182,7 @@
     width: 200%;
     height: 20px;
 }
-#inPasswd {
+#inputPasswd {
     border: 0.01px solid gray;
   
     width: 200%;

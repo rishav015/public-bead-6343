@@ -9,23 +9,23 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./create account.css" />
+    <link rel="stylesheet" href="./create.css" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-<!-- 
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-     -->
+
+    <link rel="stylesheet" href="./navbar.css" />
+    <!-- <link rel="stylesheet" href="./styles/footer.css" /> -->
+    
   </head>
 
   <body>
-    <div id="header"></div>
-    <div id="lpage">
+    <div id="navbar"></div>
+    <div id="logpage">
       <h3>PERSONAL DETAILS</h3>
-      <div id="checkR">
+      <div id="check">
         <div>
           <input id="checkmarkp" type="radio" name="personal" />Personal
         </div>
@@ -125,20 +125,26 @@
             </div>
           </div>
           <div id="bttn">
-         <button id="om"  type="submit">Create Account</button>
-         <!-- <input type="submit" placeholder="button" id="submit"> -->
+         <button type="submit">Create Account</button>
         </div>
-         
+          <!-- <div id="bttn">
+            <button id="signUp()">
+              <a href=""> CREATE ACCOUNT</a>
+            </button>
+          </div> -->
         </form>
       </div>
     </div>
     <div id="footer"></div>
   </body>
 </html>
-<!-- <script src="./create.js"></script> -->
-<script src="./signup.js"></script>
+<script src="./create.js"></script>
 
-
-
-
-
+<script type="module">
+ import { navbar } from "./navbar.js";
+  // import { footer } from "./components/footer.js";
+  let navbardata = document.getElementById("navbar").innerHTML = navbar();
+  // footer = document.getElementById("footer");
+  // footer.innerHTML = footers();
+ 
+</script>
