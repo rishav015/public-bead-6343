@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/payments.css">
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+</head>
+<body>
+    <div id="header"></div>
+    <div id="ravi" style="margin-top: 100px;">
+        <h1>ENTER YOUR CARD DETAILS</h1>
+    <div id="container"></div>
+    <div id="bank">
+        <div>
+            <input type="text" name="" id="" placeholder="CARD NUMBER">
+            <input type="number" placeholder="MONTH" >
+            <input type="number" placeholder="year">
+        </div>
+        <div>
+            <input type="text" placeholder="CARD HOLDER">
+            <input type="text" placeholder="CVV SECURITY CODE">
+        </div>
+    </div>
+    <div style="height:400px;"></div>
+    <div id="items"></div>
+    </div>
+    
+    <div id="footer"></div>
+</body>
+</html>
+<script src="./scripts/payment.js"></script>
+<script type="module">
+    import  { header }  from "./components/header.js";
+  import { footers } from "./components/footer.js";
+  let navbar_div = document.getElementById("header");
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footers();
+  navbar_div.innerHTML = header();
+</script>

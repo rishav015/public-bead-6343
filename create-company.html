@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./create.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <!-- <link rel="stylesheet" href="./styles/footer.css" /> -->
 
     <link
       rel="stylesheet"
@@ -17,12 +19,12 @@
     />
 
     <link rel="stylesheet" href="./navbar.css" />
-    <!-- <link rel="stylesheet" href="./styles/footer.css" /> -->
+    <link rel="stylesheet" href="./styles/footer.css" />
     
   </head>
 
   <body>
-    <div id="navbar"></div>
+    <div id="header"></div>
     <div id="logpage">
       <h3>PERSONAL DETAILS</h3>
       <div id="check">
@@ -141,10 +143,10 @@
 <script src="./create.js"></script>
 
 <script type="module">
- import { navbar } from "./navbar.js";
-  // import { footer } from "./components/footer.js";
-  let navbardata = document.getElementById("navbar").innerHTML = navbar();
-  // footer = document.getElementById("footer");
-  // footer.innerHTML = footers();
- 
+ import  { header }  from "./components/header.js";
+  import { footers } from "./components/footer.js";
+  let navbar_div = document.getElementById("header");
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footers();
+  navbar_div.innerHTML = header();
 </script>

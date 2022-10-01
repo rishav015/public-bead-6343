@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./help.css">
-    <link rel="stylesheet" href="./navbar.css">
+    <!-- <link rel="stylesheet" href="./styles/navbar.css"> -->
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
     <style>
     </style>
     <title>Help</title>
 </head>
 <body>
-   <div id="navbar"></div>
+   <div id="header"></div>
     
     <div id="container">
-        <h3>HELP</h3>
+        <!-- <h3>HELP</h3> -->
         <div id="box">
             <div >
                 <img src="https://static.zara.net/photos///contents/mkt/misc/help/icons//icon-80-help-bag.svg?ts=1550654368093" alt="">
@@ -54,16 +57,17 @@
             </div>
         </div>
     </div>
-
+    <div id="footer"></div>
 
 
 </body>
 </html>
 
 <script type="module">
-    import { navbar } from "./navbar.js";
-    // import { footer } from "./components/footer.js";
-    let navbardata = document.getElementById("navbar").innerHTML = navbar();
-    // footer = document.getElementById("footer");
-    // footer.innerHTML = footers();
+   import  { header }  from "./components/header.js";
+  import { footers } from "./components/footer.js";
+  let navbar_div = document.getElementById("header");
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footers();
+  navbar_div.innerHTML = header();
   </script>

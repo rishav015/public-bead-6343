@@ -14,8 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="./login.css" />
-    <link rel="stylesheet" href="./navbar.css" />
-     <!-- <link rel="stylesheet" href="./styles/footer.css" />  -->
+    <link rel="stylesheet" href="./styles/header.css" />
+     <link rel="stylesheet" href="./styles/footer.css" /> 
 
     <script src="./loginValidation.js">
       
@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <div id="navbar"></div>
+    <div id="header"></div>
     <div id="logindiv">
       <div id="log">
         <section>
@@ -90,9 +90,10 @@
 <script src="./login.js"></script>
 
 <script type="module">
-  import { navbar } from "./navbar.js";
-  // import { footer } from "./components/footer.js";
-  let navbardata = document.getElementById("navbar").innerHTML = navbar();
-  // footer = document.getElementById("footer");
-  // footer.innerHTML = footers();
+  import  { header }  from "./components/header.js";
+  import { footers } from "./components/footer.js";
+  let navbar_div = document.getElementById("header");
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footers();
+  navbar_div.innerHTML = header();
 </script>

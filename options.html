@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zara</title>
+    <link rel="stylesheet" href="./styles/options.css">
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+</head>
+<body>
+  <div id="header"></div>
+  <div id="ravi" style="margin-top: 100px;">
+    <h3>CHOOSE A PAYMENT METHOD</h3>
+  <div id="box">
+    <p id="intro">Please note that only cards that use 3D Secure are accepted. Contact your bank to activate it or for further instructions.</p>
+  </div>
+   <div id="payment"></div>
+  <div id="cards"></div>
+ <div id="items1"></div> 
+ <div id="change1">
+    <button id="change">continues</button>
+  </div>
+  </div>
+  
+  <div id="footer"></div>
+</body>
+</html>
+<script src="./scripts/options.js"></script>
+<script type="module">
+  import  { header }  from "./components/header.js";
+  import { footers } from "./components/footer.js";
+  let navbar_div = document.getElementById("header");
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footers();
+  navbar_div.innerHTML = header();
+</script>
