@@ -1,0 +1,68 @@
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top:0px;
+  }
+  #arrange{
+      display: flex;
+      gap:20px;
+  }
+  #arrange>div{
+  width: 150px;
+   border: 1px solid black;
+   padding-left: 10px;
+  }
+  #arrange>div>img{
+    width:50px;
+  }
+  #items{
+    display: flex;
+    gap:10%;
+    width:50%; 
+    margin: auto; 
+  }
+  #items p{
+      font-size: 10px;
+  }
+  #gap{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 90%;
+  }
+  #gap img{
+    width: 100%;
+  }
+ 
+  #change{
+      color: white;
+      background-color: black;
+      padding: 10px;
+      
+  }
+  #change1{
+      display: flex;
+      justify-content: end;
+     bottom: 0px;
+     background-color: white;
+     position: sticky;
+     
+  }
+  #chart img{
+      height: 40px;
+      width: 40px;
+  }
+  #chart{
+      display: flex;
+      gap:20px;
+  }
+  #middle{
+      display: flex;
+      justify-content: space-between;
+  }
