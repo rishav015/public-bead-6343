@@ -1,4 +1,5 @@
 let container=document.querySelector("#banks")
+let obj1;
 bank_image=[
     {
         img:"https://static.zara.net/static/images/payment/payment/banks/axis-bank.svg",
@@ -101,9 +102,20 @@ let image =document.createElement("img")
 image.setAttribute("src",img)
 div.addEventListener("click",()=>{
     div.style.border="2px solid black"
+    obj1={
+       pic:img
+    }
+    sessionStorage.setItem("bank",JSON.stringify(obj1))
 })
 let h5=document.createElement("h5")
 h5.innerText=name;
 div.append(image,h5)
 container.append(div)
+})
+document.querySelector("#change").addEventListener("click",()=>{
+ if(obj1==undefined){
+    alert("please select the bank")
+ }  else{
+    window.location.href="selected.html"
+ } 
 })

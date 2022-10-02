@@ -6,20 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/bank.css">
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 </head>
 <body>
-    <div id="navbar"></div>
-    <h5>SELECT YOUR BANK</h5>
+    <div id="header"></div>
+    <div id="ravi" style="margin-top:100px;">
+        <h5>SELECT YOUR BANK</h5>
     <div id="banks"></div>
     <div id="footer"></div>
-    <div id="change1"> <button id="change"><a href="./payment.html" style="color: white; text-decoration:none; font-size: 13px; font-family:'Times New Roman', Times, serif;">CONTINUE</a></button></div>  
+    <div id="change1"> <button id="change" style="color: white; font-size: 13px; font-family:'Times New Roman', Times, serif;cursor:pointer;">CONTINUE</button></div>  
+    </div>
 </body>
 </html>
 <script src="./scripts/banks.js"></script>
 <script type="module">
-    import {footer,navbar} from "./scripts/footer.js"
-   let nav=document.querySelector("#navbar")
-   nav.innerHTML=navbar()
-   let foot=document.querySelector("#footer")
-   foot.innerHTML=footer()
+    import  { header }  from "./components/header.js";
+  import { footer,navbar } from "./scripts/footer.js";
+  let navbar_div = document.getElementById("header");
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footer();
+  navbar_div.innerHTML = header();
 </script>

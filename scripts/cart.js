@@ -15,7 +15,7 @@ function display_product(data) {
     data.reduce(function (ac, cv) {
       return ac + cv.price * cv.qty;
     }, 0);
-
+    console.log(cart_total);
     localStorage.setItem("total",JSON.stringify(cart_total))
 
   document.querySelector("#total").innerHTML = cart_total;

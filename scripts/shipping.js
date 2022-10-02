@@ -14,15 +14,9 @@ function display_product(data) {
   document.querySelector("#gap").innerHTML = "";
 
   data.map(function (elem, index) {
-    // creating elements and setting attributes
-
-    // main container
+  
     let mainDiv = document.createElement("div");
-
-    // for product image
     let img = document.createElement("img");
-
-    // for product description and name
     let details = document.createElement("div");
     details.setAttribute("class", "desc");
     let name = document.createElement("h5");

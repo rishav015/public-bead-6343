@@ -27,6 +27,9 @@
    padding: 10px;
     
 }
+#change:hover{
+    transform: scale(1.2);
+}
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -47,4 +50,8 @@
  }
  #footer p{
     font-size: 10px;
+ }
+ body{
+    margin-left: 20px;
+    margin-right: 10px;
  }

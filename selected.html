@@ -12,20 +12,18 @@
 <body>
     <div id="header"></div>
     <div id="ravi" style="margin-top: 100px;">
-        <h1>ENTER YOUR CARD DETAILS</h1>
+        <h1>ENTER YOUR BANK DETAILS</h1>
     <div id="container"></div>
     <div id="bank">
         <div>
-            <input type="number" name="" id="card" placeholder="CARD NUMBER">
-            <input type="number"id="month" placeholder="MONTH" >
-            <input type="number" id="year"  placeholder="year">
+            <input type="text" name="" id="name" placeholder="ACCOUNT HOLDER NAME">
+            <input type="number" id="acount_num"  placeholder="ACCOUNT NUMBER" >
+            <input type="date" id="date" placeholder="DATE">
         </div>
         <div>
-            <input type="text" id="holder" placeholder="CARD HOLDER">
-            <input type="text" id="cvv" placeholder="CVV SECURITY CODE">
+            <input type="text" id="signature" placeholder="SIGNATURE">
             <button id="proceed" style="background-color: red;color:white; border:0px; padding:10px;border-radius:10px;">Proceed</button>
         </div>
-       
     </div>
     <div style="height:400px;"></div>
     <div id="items"></div>
@@ -34,7 +32,6 @@
     <div id="footer"></div>
 </body>
 </html>
-<script src="./scripts/payment.js"></script>
 <script type="module">
     import  { header }  from "./components/header.js";
   import { footers } from "./components/footer.js";
@@ -43,3 +40,4 @@
   footer_div.innerHTML = footers();
   navbar_div.innerHTML = header();
 </script>
+<script src="./scripts/selected.js"></script>

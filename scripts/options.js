@@ -35,7 +35,7 @@ image.forEach(({img,name})=>{
     arr={
         photo:img,
     }
-    sessionStorage.setItem("mode",JSON.stringify(arr))
+    sessionStorage.setItem("mode",JSON.stringify(arr))  
 });
   div.append(pic,nam)
   payment.append(div)
